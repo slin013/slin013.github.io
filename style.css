@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding-top: 40px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+}
+
+.home {
+    max-width: 650px;
+    margin: 0 auto;
+    padding-top: 140px;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.welcome {
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.about-home {
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-home p {
+    margin-bottom: 18px;
+}
