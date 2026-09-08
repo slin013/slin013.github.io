@@ -1,3 +1,7 @@
+/* =========================
+   GLOBAL
+   ========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +13,11 @@ body {
     color: black;
     font-family: "Courier New", Courier, monospace;
 }
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
 
 nav {
     display: flex;
@@ -27,21 +36,15 @@ nav a:hover {
     color: #777;
 }
 
-@media (max-width: 600px) {
-    nav {
-        gap: 20px;
-        padding-top: 30px;
-    }
 
-    nav a {
-        font-size: 13px;
-    }
-}
+/* =========================
+   HOME PAGE
+   ========================= */
 
 .home {
     max-width: 650px;
     margin: 0 auto;
-    padding-top: 140px;
+    padding: 140px 25px 100px;
     text-align: center;
 }
 
@@ -64,4 +67,264 @@ nav a:hover {
 
 .about-home p {
     margin-bottom: 18px;
+}
+
+
+/* =========================
+   PROJECTS PAGE
+   ========================= */
+
+.projects-page {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 120px 30px;
+}
+
+.projects-page > h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+
+.project-preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.project-image img {
+    width: 100%;
+    display: block;
+}
+
+.project-info h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 8px 0 20px;
+}
+
+.project-info p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.project-year {
+    color: #777;
+    font-size: 12px !important;
+}
+
+.project-tools {
+    color: #777;
+    font-size: 12px !important;
+}
+
+.project-info a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.project-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   EXPERIENCE PAGE
+   ========================= */
+
+.experience-page {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 120px 30px;
+}
+
+.experience-page > h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 90px;
+}
+
+
+/* INDIVIDUAL COMPANY */
+
+.experience {
+    max-width: 700px;
+    margin: 0 auto 110px;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #ddd;
+}
+
+.experience:last-child {
+    border-bottom: none;
+}
+
+
+/* COMPANY HEADER */
+
+.experience-header {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+
+/* LOGO */
+
+.company-logo {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2px;
+}
+
+.company-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+
+/* COMPANY INFORMATION */
+
+.company-info {
+    text-align: left;
+}
+
+.company-info h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.company-info h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.experience-meta {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* COMPANY DESCRIPTION */
+
+.experience-description {
+    max-width: 550px;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* EXPERIENCE PROJECTS */
+
+.experience-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+
+    margin-top: 50px;
+    margin-left: 105px;
+}
+
+
+/* INDIVIDUAL EXPERIENCE PROJECT */
+
+.experience-project h3 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.experience-project p {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.experience-project .project-tools {
+    margin-top: 15px;
+    color: #777;
+    font-size: 12px !important;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 700px) {
+
+    /* NAVIGATION */
+
+    nav {
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* HOME */
+
+    .home {
+        padding: 90px 25px 70px;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+
+    /* PROJECTS */
+
+    .projects-page {
+        padding: 80px 25px;
+    }
+
+    .project-preview {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 90px;
+    }
+
+
+    /* EXPERIENCE */
+
+    .experience-page {
+        padding: 80px 25px;
+    }
+
+    .experience-page > h1 {
+        margin-bottom: 70px;
+    }
+
+    .experience {
+        margin-bottom: 80px;
+        padding-bottom: 70px;
+    }
+
+    .experience-header {
+        grid-template-columns: 55px 1fr;
+        gap: 15px;
+    }
+
+    .company-logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .experience-projects {
+        grid-template-columns: 1fr;
+        margin-left: 70px;
+        gap: 40px;
+    }
+
 }
